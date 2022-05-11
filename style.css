@@ -1,7 +1,8 @@
 :root {
     --clr-secondary: hsl(0, 0%, 94%);
     --clr-secondary-border: hsl(0, 0%, 80%);
-    --clr-success: #198754;
+    --clr-success: hsl(152, 69%, 39%);
+    --clr-success-light: hsl(152, 53%, 49%);
     font-size: 18px;
     font-family: "Lato", sans-serif;
 }
@@ -75,8 +76,14 @@ input[type="submit"] {
     border-bottom-right-radius: var(--border-radius);
 }
 
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: var(--clr-success-light);
+}
+
 input[type="submit"]:active {
     transform: scale(0.95);
+    background-color: var(--clr-success);
 }
 
 #todo-list {
