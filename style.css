@@ -1,0 +1,91 @@
+:root {
+    --clr-secondary: hsl(0, 0%, 94%);
+    --clr-secondary-border: hsl(0, 0%, 80%);
+    --clr-success: #198754;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+body > header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    background-color: var(--clr-secondary);
+}
+
+main {
+    margin-bottom: 0.25rem;
+    box-sizing: border-box;
+    margin: auto;
+    width: min(400px, calc(100% - 1.5rem));
+}
+
+.card {
+    border-radius: 0.35rem;
+    background-color: var(--clr-secondary);
+}
+
+.shadow {
+    box-shadow: 1px 2px 5px var(--clr-secondary-border);
+}
+
+.form-section {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+}
+
+.form-section h2 {
+    margin-bottom: 0.5rem;
+}
+
+form {
+    --border-radius: 0.25rem;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+}
+
+input[type="text"] {
+    border: 1px solid var(--clr-secondary-border);
+    padding: 0.25rem;
+    font-size: 0.9rem;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="submit"] {
+    border: 0;
+    background-color: var(--clr-success);
+    color: white;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+input[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+#todo-list {
+    list-style: none;
+}
+
+#todo-list li {
+    margin-bottom: 0.75rem;
+    padding: 1rem;
+    overflow-x: auto;
+    word-wrap: break-word;
+}
